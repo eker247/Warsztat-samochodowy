@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>577</width>
+    <height>473</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="PBdodaj">
+        <property name="text">
+         <string>Dodaj</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="PBaktualizuj">
+        <property name="text">
+         <string>Aktualizuj</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="PBusun">
+        <property name="text">
+         <string>Usuń</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>577</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlik">
+    <property name="title">
+     <string>P&amp;lik</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="ACpolacz"/>
+    <addaction name="ACrozlacz"/>
+   </widget>
+   <widget class="QMenu" name="menuWidok">
+    <property name="title">
+     <string>W&amp;idok</string>
+    </property>
+    <addaction name="ACpart"/>
+    <addaction name="ACexploitation"/>
+    <addaction name="ACclient"/>
+    <addaction name="ACbrand"/>
+    <addaction name="ACmodel"/>
+    <addaction name="ACrepair"/>
+    <addaction name="ACcar"/>
+   </widget>
+   <addaction name="menuPlik"/>
+   <addaction name="menuWidok"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="ACpart"/>
+   <addaction name="ACexploitation"/>
+   <addaction name="ACclient"/>
+   <addaction name="ACbrand"/>
+   <addaction name="ACmodel"/>
+   <addaction name="ACrepair"/>
+   <addaction name="ACcar"/>
+  </widget>
+  <action name="ACpolacz">
+   <property name="text">
+    <string>&amp;Połącz</string>
+   </property>
+  </action>
+  <action name="ACrozlacz">
+   <property name="text">
+    <string>&amp;Rozłącz</string>
+   </property>
+  </action>
+  <action name="ACpart">
+   <property name="text">
+    <string>&amp;Części</string>
+   </property>
+  </action>
+  <action name="ACexploitation">
+   <property name="text">
+    <string>&amp;Exploitation</string>
+   </property>
+   <property name="iconText">
+    <string>Eksploatacja</string>
+   </property>
+  </action>
+  <action name="ACclient">
+   <property name="text">
+    <string>&amp;Client</string>
+   </property>
+   <property name="iconText">
+    <string>Klient</string>
+   </property>
+  </action>
+  <action name="ACbrand">
+   <property name="text">
+    <string>&amp;Brand</string>
+   </property>
+   <property name="iconText">
+    <string>Marka</string>
+   </property>
+  </action>
+  <action name="ACmodel">
+   <property name="text">
+    <string>M&amp;odel</string>
+   </property>
+  </action>
+  <action name="ACrepair">
+   <property name="text">
+    <string>&amp;Repair</string>
+   </property>
+   <property name="iconText">
+    <string>Naprawa</string>
+   </property>
+  </action>
+  <action name="ACcar">
+   <property name="text">
+    <string>&amp;Samochód</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
